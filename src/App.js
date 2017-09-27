@@ -21,7 +21,7 @@ class App extends Component {
                 {
                    return(
                       <div className="panel-body" key={key}>
-                        className="col-sm-4 panel-body">{item.name}</label>
+                        <label htmlFor="Name" className="col-sm-4 panel-body">{item.name}</label>
                         <label htmlFor="Price" className="col-sm-4 panel-body">Cost : ${item.cost}</label>
                         <button type="submit" onClick={() =>this.props.dispatch(this.props.addToCart(item))} className="col-sm-4 btn btn-success panel-default">Add</button>
                       </div>    
